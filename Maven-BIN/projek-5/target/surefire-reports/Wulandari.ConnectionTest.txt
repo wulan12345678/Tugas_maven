@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: Wulandari.ConnectionTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.185 s <<< FAILURE! - in Wulandari.ConnectionTest
+testConnection  Time elapsed: 0.124 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+	at Wulandari.ConnectionTest.testConnection(ConnectionTest.java:34)
+Caused by: java.sql.SQLNonTransientConnectionException: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the main URL sections.
+	at Wulandari.ConnectionTest.testConnection(ConnectionTest.java:29)
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the main URL sections.
+	at Wulandari.ConnectionTest.testConnection(ConnectionTest.java:29)
+Caused by: com.mysql.cj.exceptions.WrongArgumentException: Malformed database URL, failed to parse the main URL sections.
+	at Wulandari.ConnectionTest.testConnection(ConnectionTest.java:29)
+
